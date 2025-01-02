@@ -1,15 +1,11 @@
 import { useState } from "react";
-
+import AddTask from './componentes/addTask'
+import Task from './componentes/task'
 function App(){
-  const [message,setMessage] = useState('click no butao para mudar')
   return(
     <div>
-      <h1>{message}</h1>
-      <button onClick={
-        ()=>{
-          setMessage('fui clicado')
-        }
-      }>mudar frase</button>
+     <AddTask/>
+     <Task/>
     </div>
   )
 }
